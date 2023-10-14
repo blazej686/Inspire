@@ -1,0 +1,32 @@
+/* BASIC STYLES HERE */
+
+
+.body {
+
+    background-size: cover;
+    background-position: center;
+}
+
+.author {
+
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in-out .80s;
+}
+
+.quote:hover+.author {
+    opacity: 1;
+    visibility: 1;
+
+}
+
+#weatherCard {
+    opacity: .5;
+
+}
+
+#clock {
+    opacity: .25;
+    color: black;
+    font-weight: bold;
+}
