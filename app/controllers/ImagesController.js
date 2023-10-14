@@ -15,7 +15,6 @@ function _drawPicture() {
 
 export class ImageController {
     constructor() {
-        console.log('image controller loaded');
         this.getPicture()
 
         AppState.on('imgUrl', _drawPicture)

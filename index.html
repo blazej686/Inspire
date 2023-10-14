@@ -57,12 +57,18 @@
     </section>
 
     <section class="row justify-content-around">
-      <div id="clock" class="col-2 card p-3 text-center">
+      <div id="clockCard" class="col-2 p-3 card text-center clockCard">
+        <p id="clock" class="m-0"></p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div id="quoteCard" class="col-5 card opCard">
+
 
       </div>
     </section>
 
-    </div>
 
   </main>
 
@@ -80,7 +86,7 @@
           <div class="mb-3">
             <label for="description" class="form-label" name="description">Create Todo</label>
             <input type="string" minlength="1" required class="form-control" id="description"
-              aria-describedby="CreateTodo" name="description">
+              aria-describedby="description" name="description">
             <button type="submit" class="btn btn-primary">Create To-do</button>
           </div>
         </form>

@@ -11,7 +11,6 @@ function _drawTemp() {
 
 export class WeatherController {
     constructor() {
-        console.log('weather controller loaded');
         AppState.on('currentTemp', this.getWeather)
         AppState.on('currentTemp', _drawTemp)
 

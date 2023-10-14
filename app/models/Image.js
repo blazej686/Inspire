@@ -6,10 +6,5 @@ export class Image {
 
 
     }
-    get BackgroundPictureTemplate() {
-        return `
-    
-    `
-    }
 
 }

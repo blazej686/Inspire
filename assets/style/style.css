@@ -11,13 +11,18 @@
 
     opacity: 0;
     visibility: hidden;
-    transition: ease-in-out .80s;
+    transition: ease-in-out .50s;
 }
 
-.quote:hover+.author {
-    opacity: 1;
-    visibility: 1;
+.opCard :hover+.author {
+    opacity: .75;
+    visibility: visible;
 
+}
+
+.opCard {
+    opacity: .5;
+    font-weight: bold;
 }
 
 #weatherCard {
@@ -25,8 +30,10 @@
 
 }
 
-#clock {
-    opacity: .25;
-    color: black;
-    font-weight: bold;
+.clockCard {
+    opacity: .5;
+}
+
+.clock {
+    text-shadow: 20px, 20px, black;
 }

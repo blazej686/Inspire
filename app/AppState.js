@@ -19,6 +19,8 @@ class ObservableAppState extends EventEmitter {
 
   currentTemp = null
 
+  quote = null
+
 
   // Used to load initial data
   init() {
