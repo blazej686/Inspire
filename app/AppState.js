@@ -17,7 +17,9 @@ class ObservableAppState extends EventEmitter {
 
   imgUrl = null
 
-  currentTemp = null
+  currentKel = null
+  currentCelsius = null
+  currentFahrenheit = null
 
   quote = null
 

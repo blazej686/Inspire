@@ -1,10 +1,12 @@
+import { AppState } from "../AppState.js"
+
 export class Weather {
 
     constructor(data) {
         this.coord = data.coord
         this.weather = data.weather
         this.base = data.base
-        this.main = data.main
+        this.main = data.main.temp
         this.visibility = data.visibility
         this.timezone = data.timezone
         this.id = data.id
@@ -13,22 +15,16 @@ export class Weather {
 
     }
 
-    get TempTemplate() {
 
+    get WeatherTemplateinF() {
         return `
-        <span>Current temp:${AppState.currentTemp}</span>
+        <p id="temp"><span>Current temp: ${this.main.temp}F</span></p>
+        <p class="mdi mdi-weather-lightning fs-4"></p>
+
         `
-    }
-
-    get computeTempinC() {
-
-        return console.log(
-
-            `${this.main.temp}` - 273.15
-        );
-
 
     }
+
 
 }
 // (292.62K − 273.15) × 9/5 + 32 = 67.046°F

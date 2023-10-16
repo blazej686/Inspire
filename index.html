@@ -48,10 +48,11 @@
       </div>
     </section>
 
-    <section class="row">
+    <section class="row justify-content-around my-2">
       <div id="weatherCard" class="col-1 card p-3">
-        <p id="temp"></p>
+        <p>Current temp: <span id="temp"></span>F</p>
         <p class="mdi mdi-weather-lightning fs-4"></p>
+
 
       </div>
     </section>
@@ -62,18 +63,20 @@
       </div>
     </section>
 
-    <section class="row">
-      <div id="quoteCard" class="col-5 card opCard">
-
-
-      </div>
-    </section>
 
 
   </main>
 
   <!-- SECTION -->
-  <footer>
+  <footer class="container-fluid">
+    <section class="row justify-content-around">
+      <div id="quoteCard" class="col-5 card opCard">
+      </div>
+      <div class="col-4"></div>
+      <div class="col-12 my-4">
+
+      </div>
+    </section>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
       aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
@@ -87,7 +90,7 @@
             <label for="description" class="form-label" name="description">Create Todo</label>
             <input type="string" minlength="1" required class="form-control" id="description"
               aria-describedby="description" name="description">
-            <button type="submit" class="btn btn-primary">Create To-do</button>
+            <button type="submit" class="btn btn-primary my-2">Create To-do</button>
           </div>
         </form>
 

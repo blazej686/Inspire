@@ -5,14 +5,17 @@ import { setHTML } from "../utils/Writer.js";
 
 
 function _drawTemp() {
-    const temp = AppState.currentTemp
-    setHTML('temp', temp)
+    const currentFahrenheit = AppState.currentFahrenheit
+    if (currentFahrenheit == null) {
+        return
+    }
+    setHTML('temp', AppState.currentFahrenheit)
 }
 
 export class WeatherController {
     constructor() {
-        AppState.on('currentTemp', this.getWeather)
-        AppState.on('currentTemp', _drawTemp)
+        this.getWeather()
+        AppState.on('currentFahrenheit', _drawTemp)
 
     }
 
